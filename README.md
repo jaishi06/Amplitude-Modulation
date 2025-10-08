@@ -2,6 +2,8 @@
 
 EXP NO: 1	GENERATION AND DETECTION OF AM
 
+NAME: JAISHIKAA.S
+
 AIM:
 
 To generate and detect the amplitude modulation and demodulation u s i n g S C I L A B and to calculate modulation index of AM.
@@ -75,22 +77,34 @@ Compare the original modulating signal with the demodulated signal. PROCEDURE
 •	Verify the generated waveform using Tabulation and Model Waveform
 
 Program
-
-
-
+```
+Am=6.6;
+fm=587;
+Ac=13.2;
+fc=5870;
+fs=58700;
+t=0:1/fs:2/fm;
+m=Am*cos(2*3.14*fm*t);
+subplot(3,1,1);
+plot(t,m);
+c=Ac*cos(2*3.14*fc*t);
+subplot(3,1,2);
+plot(t,c);
+s=(Ac+m).*cos(2*3.14*fc*t);
+subplot(3,1,3);
+plot(t,s);
+```
 Output Waveform
-
-
-
-
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/7de465b6-77bb-4b73-a69e-f99e81a69f6e" />
 
 TABULATION:
 
+![WhatsApp Image 2025-09-23 at 20 30 02_164674ab](https://github.com/user-attachments/assets/e3595a87-453b-4aad-b4c2-5dded6260f5f)
 
 
 Calculation
-1.	ma (Theory) = am/ac =
-2.	ma(Practical) = (Emax-Emin)/(Emax+Emin) =
+1.	ma (Theory) = am/ac = 6.6/13.2 = 0.5
+2.	ma(Practical) = (Emax-Emin)/(Emax+Emin) = 13.2/26.4 = 0.5
 
 
 MODEL GRAPH
