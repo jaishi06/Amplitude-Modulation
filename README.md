@@ -99,9 +99,10 @@ Output Waveform
 
 TABULATION:
 
-![WhatsApp Image 2025-11-28 at 14 33 10_bfb622ac](https://github.com/user-attachments/assets/fcc98f96-290c-4e5d-b2f4-d2088beb94ab)
 
-Calculation
+![WhatsApp Image 2025-11-28 at 16 30 25_fb4a20d1](https://github.com/user-attachments/assets/b1584d6b-e55a-46c3-952f-5aec03cbc95c)
+
+callculation
 1.	ma (Theory) = am/ac = 6.6/13.2 = 0.5
 2.	ma(Practical) = (Emax-Emin)/(Emax+Emin) = 13.2/26.4 = 0.5
 
